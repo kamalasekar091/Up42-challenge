@@ -1,4 +1,4 @@
-package com.up42.challenge.featureslist.model.exception;
+package com.up42.challenge.featureslist.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
