@@ -3,6 +3,7 @@ package com.up42.challenge.featureslist.repository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.up42.challenge.featureslist.model.Feature;
 import com.up42.challenge.featureslist.model.FeatureCollection;
+import com.up42.challenge.featureslist.model.exception.InternalServerException;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Component;
 
@@ -45,6 +46,7 @@ public class FeatureRepository {
                                         FeatureCollection[].class));
         } catch (IOException e) {
             log.error("Exception occurred while Parsing/reading Data from teh input File {}",e.getMessage());
+            throw new InternalServerException("The data input file cannot be parsed.");
         }
     }
 
