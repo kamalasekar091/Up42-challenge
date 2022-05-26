@@ -7,11 +7,14 @@ Refactor Feature application to production standard and add new endpoint to quer
 ## Task Done
 
     1) Created Layers in application for separation of duties
-    2) Added custom Exception for few errors
-    3) Added Logging
-    4) Added test case for each layer
-    5) Swagger for API Documentation
-    6) Actuator to monitor Health of application
+    2) Added Logging
+    3) Added test case for each layer
+    4) Swagger for API Documentation
+    5) Actuator to monitor Health of application
+    6) SureFire Report for Test status
+    7) Jacoco Code coverge report
+    8) Docker plugin
+    9) Added custom Exception for few errors
 
 ## Assumption made
 
