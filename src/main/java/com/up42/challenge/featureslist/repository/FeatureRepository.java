@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 @Log4j2
 public class FeatureRepository {
 
-    private String dataFileName="source-data.json";
+    private final String dataFileName="source-data.json";
 
     private List<FeatureCollection> featureCollections;
 
