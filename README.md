@@ -6,10 +6,12 @@ Refactor Feature application to production standard and add new endpoint to quer
 
 ## Task Done
 
-    1) Created Layers for application for separation of duties
+    1) Created Layers in application for separation of duties
     2) Added custom Exception for few errors
     3) Added Logging
     4) Added test case for each layer
+    5) Swagger for API Documentation
+    6) Actuator to monitor Health of application
 
 ## Assumption made
 
@@ -44,6 +46,16 @@ Refactor Feature application to production standard and add new endpoint to quer
 
     Status: 200 OK
     Content-Type: image/png
+
+## Other URL
+
+#### Swagger End Point: 
+    
+    http://localhost:8080/swagger-ui/index.html
+
+#### actuator End Point
+
+    http://localhost:8080/actuator/health
 
     
 
