@@ -17,6 +17,19 @@ Refactor Feature application to production standard and add new endpoint to quer
 
     1) Feature Id with no quick look is valid, so 200 ok was retured in that scenario
 
+## Build Process
+
+### Manual Build Process
+
+    1) Make sure there is no application using 8080
+    2) run mvn clean install
+    3) mvn site -DgenerateReports=false (this command is for SureFire report)
+    4) Surefire report is present under  target-->site-->surefire-report.html
+    5) Jacoco Resport are present under  target-->site-->jacoco-->index.html
+    6) To run application command line, go to target folder
+    7) Execute java -jar .\featureslist-0.0.1-SNAPSHOT.jar
+
+
 ## Request and Response
 
 ### Get All Features
