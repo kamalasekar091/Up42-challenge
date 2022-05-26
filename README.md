@@ -29,6 +29,17 @@ Refactor Feature application to production standard and add new endpoint to quer
     6) To run application command line, go to target folder
     7) Execute java -jar .\featureslist-0.0.1-SNAPSHOT.jar
 
+### Docker Build
+
+Run below command for Manual build (Please use the next step to run existing image)
+
+    1) mvn spring-boot:build-image under project root dir
+    2) docker run -p 8080:8080 up42-featureslist:0.0.1-SNAPSHOT
+        
+Use Existing Image - Run below command 
+
+    1) docker pull kamalasekar091/up42-featureslist
+    2) docker run -p 8080:8080 kamalasekar091/up42-featureslist
 
 ## Request and Response
 
